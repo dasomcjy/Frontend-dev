@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow(그림자 넣기)</title>
+    <style>
+        .b1 {width : 300px; height: 30px; background-color: aqua; border: 1px solid red; 
+            box-shadow: 10px 10px 10px teal ;
+        }
+        .b2 {width : 300px; height: 30px; background-color: aqua; 
+            border: 5px solid rgba(99, 177, 122, 0.7);
+            margin : 50px; 
+            box-shadow: -10px -10px 10px rgba(219, 100, 96, 0.7);
+        }
+
+        .b3 {width : 300px; height: 30px; background-color: rgba(0, 0, 255, 0.521); 
+            border: 5px solid rgba(220, 4, 248,0.5);
+            box-shadow: 10px 10px 5px red , 20px 20px 5px blue, 30px 30px 5px green;
+        }
+
+        .b4 {width : 300px; height: 50px; background-color: palevioletred; border : 3px solid rosybrown;
+            margin : 100px;
+            box-shadow: 10px 10px 10px rgba(247, 152, 149, 0.836); 
+        }
+
+    </style>
+</head>
+<body>
+    <h3> 그림자 넣기 </h3>
+
+    <!--
+        box-shadow: 수평 그림자 (필수) | 수직 그림자(필수)  | 그림자흐림 | 그림자 번짐 | 그림자 색상 | 삽입효과
+            수평그림자 : + (왼쪽으로 이동), - (오른쪽으로 이동)
+            수직그림자 : + (아래로 이동), - (위로 이동)
+            rgba(red, green, blue, 투명도)
+                red : 0 ~ 255
+                green : 0 ~ 255 
+                blue : 0 ~255
+                투명도 : 0 ~ 1 (불투명)
+    -->
+
+    <div class = "b1"> 박스 그림자 넣기 1</div>
+    <div class = "b2"> 박스 그림자 넣기 2</div>
+    <div class = "b3"> 박스 그림자 넣기 3</div>
+    <div class = "b4"> 박스 그림자 넣기 4</div>
+
+</body>
+</html>

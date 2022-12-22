@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selector - 후손, 자손, 일반형제, 그룹선택자</title>
     <style>
-    
+        div ul {color : red; }
+        div h2 {color : yellow; background-color : purple;}
 
+        body > div > h3 { color : blue; }
+        body > p { color : green ; background-color: yellow;}
+        body > h3 > tel > home {color :aqua; }
 
     </style>
 </head>
@@ -22,7 +26,30 @@
         그룹 선택자      : 선택자A , 선택자B  <== 선택자A, 선택자B를 모두 선택 
     -->
 
-    
+    <!-- 후손 선택자 예제 -->
+    <div>
+        <h2> Descendant Selector_1 (후손 선택자 : 제목) </h2>
+        <ul> 후손 선택자 
+            <li> 자식의 자식 (후손1) </li>
+            <li> 자식의 자식 (후손2) </li>
+        </ul> 
+    </div>
+
+    <h2> Descendant Selector_2 (후손 선택자 : 제목) </h2>
+
+    <!-- 자손 선택자 --> 
+    <div>
+        <h3> Child Selector_1 </h3>
+    </div>
+    <p> 자손 선택자 </p>
+    <h3>
+        <sno>123456</sno>
+        <std>홍길동</std>
+        <tel>
+                <office>    02-3456-7890 </office> <br>
+                <home> 010-2345-6789 </home>
+        </tel> 
+    </h3>    
     
 </body>
 </html>
