@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    header { width : 100% ; height : 20vh ; border : 1px solid red; }
+    nav { color : palevioletred ; font-size: 20px;}    
+    .s1 {width : 30% ; height : 80vh; border : 1px solid rgb(47, 0, 255);
+        float : left}
+    .s2 { width : 100% ; height : 80vh; border : 5px solid rgb(0, 255, 13);}    
+    footer {width : 100% ; height : 20vh; border : 1px solid red; 
+        clear:both;
+    }
+    </style>
+</head>
+<body>
+    <!-- FLoat 속성을 사용해서 레이아웃 실습 
+            레이아웃 잡을때 border 1px solid red ; 
+
+    -->
+
+    <header>       </header>       <!-- 100% -->
+    <section class = "s1">
+        <nav> 메뉴
+            <li> 안녕 </li> 
+            <li> 반가워!</li>
+            </nav> 
+    </section>     <!-- 왼쪽 30%-->
+    <section class = "s2" >
+        <nav> 메뉴
+            <li> 안녕 </li> 
+            </nav> 
+    </section>     <!-- 중앙 (main) 70%-->
+    <footer>하단 footer </footer>       <!-- 100% -->   
+
+
+</body>
+</html>
