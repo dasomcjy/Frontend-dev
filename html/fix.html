@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    * {
+        border-collapse : collapse ;
+        margin : 0px;
+        padding : 0px;
+        text-decoration : none;
+        color : black;
+        list-style : noen;
+    }
+    .blankPosition{
+        width : 100%;
+        background: gray;
+        height : 300px;
+    }
+    .relativePosition{
+        width : 100%;
+        background : pink;
+        height : 300px;
+    }
+    .relativePosition > div {
+      padding: 50px;
+      background : red;
+      margin-top : 10px;
+    }
+
+    .absolutePosition{
+        width : 100%;
+        background: violet;
+        height : 300px;
+    }
+    .fixedPosition{
+        width : 100%;
+        background : skyblue;
+        height : 300px;
+    }
+
+    </style>
+    <div class = "blankPosition">
+        <div>blank</div>
+    </div>
+    <div class = "relativePosition">
+        <div>relative</div>
+        <div>relative</div>
+    </div>
+    <div class = "absolutePosition">
+        <div>absolute</div>
+    </div>
+    <div class = "fixedPosition">
+        <div>fixed</div>
+    </div>
+</body>
+</html>
