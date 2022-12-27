@@ -13,6 +13,10 @@
  ul {
             list-style-type: none;
         }
+#page {
+        width:1200px;
+        margin:0 auto;
+    }       
 #logo {
     float : left;
     padding-left: 20px;
@@ -71,6 +75,7 @@ header {
 #clear{
     clear:both;
 }
+
 main2 > article {
     float : left;
 }
@@ -123,7 +128,13 @@ footer {
     float : right;
     padding-top: 10px;
 }
-#naver {
+select {
+    float :right;
+    margin-top : 10px; 
+    width:100px;
+    height:20px;
+}
+/*#naver {
     text-align: left ;
     border : 1px solid gray;
     width : 100px;
@@ -136,6 +147,7 @@ footer {
 }*/
 </style>
 <body>
+    <div id="page">
     <header>
 <div id = logo> 
     <img src = "logo.gif">
@@ -154,23 +166,23 @@ footer {
 </ul>
     </header>
 <div id = menu>
-    <nav> <img src = "menu01.gif"> </nav>
-    <nav> <img src = "menu02.gif"> </nav>
-    <nav> <img src = "menu03.gif"> </nav>
-    <nav> <img src = "menu04.gif"> </nav>
-    <nav> <img src = "menu05.gif"> </nav>
+    <nav> <img src = "menu01.gif" width="210" > </nav>
+    <nav> <img src = "menu02.gif" width="210"> </nav>
+    <nav> <img src = "menu03.gif" width="210"> </nav>
+    <nav> <img src = "menu04.gif" width="210"> </nav>
+    <nav> <img src = "menu05.gif" width="210"> </nav>
 </div>
 
 <main>
     <section id = banner>
-        <nav> <img src = "banner01.gif" width="320" height="110" > </nav>
+        <nav> <img src = "banner01.gif" width="370" height="110" > </nav>
         <nav> <img src = "banner_bar.gif" width="20" height="110" > </nav>
-        <nav> <img src = "banner02.gif" width="320" height="110" ></nav>
+        <nav> <img src = "banner02.gif" width="370" height="110" ></nav>
         <nav> <img src = "banner_bar.gif" width="20" height="110" > </nav>
-        <nav> <img src = "banner03.gif"  width="320" height="110" ></nav>
+        <nav> <img src = "banner03.gif"  width="370" height="110" ></nav>
     </section>
     <div id = "clear"> </div>
-    <main2>
+    <main2 id = c2 >
     <article id = customer>
         <div> <img src = "customer.gif"></div>
         <div id = more1> <img src = "more.gif" ></div>
@@ -267,17 +279,22 @@ footer {
             <li> | </li>
             <li> 금융사기신고센터 </li>
         </ul>
-        <div id = f>
+        <article id = f>
         <div> <h3> 고객센터 1588-1234 </h3></div>
-        <div id = naver> 네이버 </div>    
+        <select>
+			<option>네이버</option>
+			<option>다음</option>
+			<option>구글</option>
+			</select>
         <div id = "clear"> </div>
         <div id = t> <img src = "t.gif"></div>
         <div id = t> <img src = "b.gif"></div>
         <div id = t> <img src = "f.gif"></div>
-        </div>
+        </article>
         <div><img src = "address.gif"></div>
  
     </footer>
 </main>
+</div>
 </body>
 </html>
