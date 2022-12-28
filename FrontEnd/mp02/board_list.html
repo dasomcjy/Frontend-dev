@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin : 0 ; padding : 0 ;
+          /* border : 1px solid red;  */
+        }
+
+        #page {
+        width:980px;
+        margin:0 auto;
+        }
+
+        .clear {
+        clear:both;
+        }
+        
+        header {
+            /* border : 1px solid red; */
+            width : 100% ;
+            height : 100px ;
+        }
+
+        #logo {
+            margin-top : 25px;
+            margin-right : 20px;
+            margin-left : 20px;
+            float : left;
+           
+        }
+
+        #mainmenu {
+            margin-top: 20px;
+            float : left;
+        }
+
+        ul {
+          list-style-type:none;
+         }
+
+         #top_menu {
+            float : right;
+            margin-top : 15px;
+            margin-right: 70px;
+
+         }
+         #top_menu li {
+            float : left;
+            margin-left: 5px;
+         }
+
+         #main_menu {
+            position : absolute;
+            margin-left: 170px;
+            margin-top:  65px;
+         }
+         #main_menu li {
+            float : left;
+            margin-left : 70px;
+            color: white;
+         }
+         aside {
+            width : 180px;
+            height : 800px;
+            /* border : 1px solid red; */
+            float : left;
+         }
+
+         aside #loginbox {
+            border : 1px solid rgb(179, 175, 175);
+            background-color: rgb(233, 231, 231);
+            border-radius: 10px;
+            margin-top: 20px;
+            width : 180px; 
+            height : 110px;
+            float : left;
+         }
+         aside #member_login {
+            padding-left: 10px;
+            padding-top : 10px;
+            
+         }
+
+         aside #login {
+            float : left;
+            padding-left: 10px;
+            padding-bottom: 10px;
+    
+         }
+
+         aside #login input {
+            width: 80px;
+        }
+         aside #loginbutton {
+            float : right;
+            padding-right: 10px;
+         }
+
+        aside .community {
+            padding-top: 20px;
+        }
+
+        .background-Wrap {
+            background-image: url(img/sub_menu_bg.png);
+            width : 186px;
+            height : 320px;
+        }
+
+        .content {
+            padding-top :80px;
+            padding-left : 30px;
+        }
+   
+
+        aside #meet2 {
+            color:#666666
+            
+        }
+        
+        aside #meet2 li {
+            list-style-image: url("img/icon_blue.gif");
+            margin-left: 35px;
+            margin-top : 3px;
+            font-size: 13px;
+        }
+         
+        #sub_bottom {
+            padding-top: 20px;
+        }
+        main {
+            width : 800px;
+            height: 800px;
+            margin-left: 180px;
+            /* border : 1px solid red; */
+     
+        }
+
+         main #main_img{
+            margin-top: 20px;
+            margin-left:10px;
+            float : left;
+         }
+
+        #notice {
+        width:400px;
+        height:111px;
+        float:left;
+        margin-top:30px;		
+        margin-left:10px;
+        }
+        #notice_top {
+            border-bottom : 1px solid rgb(179, 175, 175);
+            width: 400px; 
+            height: 30px;
+
+        }
+        #book {
+            float: left;
+        }
+
+        #notice .title {
+        margin-left:10px;
+        float:left;
+        }
+
+        #notice .more {
+        float:right;
+        }
+
+        #notice ul {
+        margin-top:12px;
+        color:#666666;
+        }
+
+        #notice li {
+        margin-top:5px;
+        }
+
+        #notice .subject {
+        float:left;
+        margin-left:10px;
+        }
+
+        #notice .date {
+        float:right;
+        margin-right:5px;
+        }
+
+        #youtube {
+            margin-top:30px;		
+            margin-right:40px;
+            float : right;
+        }
+
+        #youtube .more {
+        float:right;
+        }
+        #youtube_top {
+            border-bottom : 1px solid rgb(179, 175, 175);
+            width: 300px; 
+            height: 30px;
+        }
+        #youtube #youtbue_img {
+            padding-top: 10px;
+        }
+        
+        #photo{
+        width:700px;
+        height:160px;
+        float:left;
+        margin-top:50px;		
+        margin-left:20px;
+
+        }
+
+        #photo1 {
+            border : 1px solid rgb(179, 175, 175);
+            width : 700px;
+            height : 180px;
+            border-radius: 10px;
+        }
+        #photo1 div {
+            float : left;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right:20px;
+            text-align: center;
+        }
+        
+        footer {
+            /* border : 1px solid red; */
+            margin-top: 30px;
+            width : 100% ;
+            height : 100px ;
+            border-top : 1px solid rgb(179, 175, 175);
+        }
+
+        #bottom {
+            margin-left : 180px;
+            margin-top : 20px;
+        }
+
+        #bottom1 {
+            float : left;
+        }
+
+        #bottom2 {
+            float : left;
+            padding-left : 30px;
+        }
+        #icons {
+        margin-top:5px;
+        text-align:right;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div id = "page">
+        <header>
+            <ul id="top_menu">
+                <li>HOME | </li>
+                <li>LOGIN | </li>
+                <li>JOIN | </li>
+                <li>NOTICE</li>
+            </ul>
+            <img id = "logo" src = "img/logo.png">
+            <img id = "mainmenu" src = "img/main_menu_bg.png">
+            <ul id="main_menu">
+                <li> 자유 게시판 </li>
+                <li> 기타 연주</li>
+                <li> 공동 구매</li>
+                <li> 연주회 안내</li>
+                <li> 회원 게시판</li>
+            </ul>
+        </header>
+        <aside>
+            <div id = "loginbox">
+                <img id = "member_login" src = "img/ttl_login.png">
+                <ul id = "login">
+                    <li> 
+                        <input type="text" name = "id">                        
+                    </li>
+                    <li >
+                        <input type = "password" name = "pw">
+                    </li>
+                </ul>
+                <img id = "loginbutton" src = "img/btn_login.gif">
+                <div class="clear"></div>
+                <img src = "img/btn_join.gif">
+                <img src = "img/btn_search.gif">
+            </div>
+            <div class="clear"></div>
+            <div class = "community">
+               <div class = "background-Wrap">
+                    <div class = "content">           
+                    <span> + 자유 게시판</span><br><br>
+                    <span> + 방명록 </span><br><br>
+                    <span> + 공지사항</span><br><br>
+                    <span> + 등업 요청 </span><br><br>
+                    <span> + 포토갤러리 </span>
+                    </div>
+                </div>
+            </div>
+            <div id = "sub_bottom">
+                <img src = "img/banner1.png">
+                <img src = "img/banner2.png">
+                <img src = "img/banner3.png"> 
+
+            </div>
+        </aside>
+    <main>
+            <img id = "main_img" src = "img/comm.gif">
+
+     </main>   
+    <footer>
+        <div id = bottom >
+            <img id = bottom1 src = "img/logo_footer.gif">
+            <ul id = bottom2>
+                <li> 서울시 강남구 상성동 1234 우 : 123-1234</li>
+                <li> TEL : 031-123-1234 Email : email@domain.com</li>
+                <li> COPYRIGHT (C)루바토 ALL RIGHTS RESERVED</li>
+            </ul>
+        </div>
+        <div id="icons">
+            <img src="img/facebook.gif">
+            <img src="img/blog.gif">
+            <img src="img/twitter.gif">
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>
