@@ -9,7 +9,7 @@
 <style>
     *{ margin : 0 ; padding : 0 ;
           /* border : 1px solid red;  */
-
+    
     }
 
     body {
@@ -33,7 +33,7 @@
 
     main {
         width : 1400px;
-        height : 2000px;
+        height : 800px;
     }
     a {
         text-decoration: none;
@@ -136,7 +136,73 @@
         padding-top: 10px;
         border-bottom: 1px solid rgb(190, 184, 184);    }
     
+     main #cart {
+        width : 1100px;
+        height : 500px;
+        margin-left: 300px;
 
+     }    
+
+     main #cart #carttitle {
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 10px;
+        height : 30px;
+        float : left;
+        position : absolute;
+        margin-top: 20px;
+     }
+
+     main #cart #carttitle span {
+        color : rgb(155 195 42);
+        padding-right: 10px;
+     }
+     main #cart #process {
+        position : absolute;
+        width : 1080px;
+        height: 100px;
+        padding-top: 20px;
+        margin-top: 70px;
+        margin-left: 10px;
+        border-top : 1px solid rgb(78 76 77);}
+
+    #chart table {
+        margin-left : 30px;
+        text-align: center;
+        width :1000px;
+        border-top: 3px solid rgb(155 195 42); 
+        border-collapse: collapse;    
+        border-left: 1px solid rgb(78 76 77);
+        border-right: 1px solid rgb(78 76 77);
+        
+    }
+    #chart table th {
+        background-color: rgb(185, 183, 183);
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    #chart table td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom : 2px solid rgb(78 76 77); 
+        border-top: 2px solid rgb(78 76 77); 
+    }
+
+    #button ul {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #button ul li {
+        display: inline-block;
+        text-align: center;
+    }
+
+    #TEL {
+        margin-top: 40px;
+        border: 1px solid rgb(78 76 77);
+    }
         footer {
         width : 100% ;
         height : 100px ;
@@ -221,7 +287,64 @@
                 </ul>
                 </div>
             </aside>
-         
+            <section id = cart>
+                <div id = carttitle><span>SHPPING CART</span>장바구니</div>
+                <div id = process>
+                    <img src = "img/process.png" width = "1000">
+                </div>
+                <div id = chart>
+                    <table>
+                        <tr>
+                            <th>선택</th>
+                            <th>상품명</th>
+                            <th>판매가</th>
+                            <th>수량</th>
+                            <th>적립금</th>
+                            <th>배송비</th>
+                            <th>합계</th>
+                        </tr>
+                        <tr>
+                            <td class = a1><input type="checkbox"></td>
+                            <td class = a2>
+                                sjdy-005 펄실크 벽지/가로 125cm x 세로 90cm
+                            </td>
+                            <td class = a3>19,000원</td>
+                            <td class = a4><input type="checkbox"><input type = "button" value = "수정"></td>
+                            <td class = a5>100원</td>
+                            <td class = a6>3,000원</td>
+                            <td class = a7>22,000원</td>
+                        </tr>
+                        <tr>
+                            <td class = a1><input type="checkbox"></td>
+                            <td class = a2>
+                                sjdy-005 펄실크 벽지/가로 125cm x 세로 90cm
+                            </td>
+                            <td class = a3>19,000원</td>
+                            <td class = a4><input type="checkbox"><input type = "button" value = "수정"></td>
+                            <td class = a5>100원</td>
+                            <td class = a6>3,000원</td>
+                            <td class = a7>22,000원</td>
+                        </tr>
+                        <tr>
+                            <td colspan = "7" align = "right"> [상품 구매 금액] : 19,000 + [배송비] : 3,000 = [총구매액]:22,000원 </td>
+                        </tr>
+                        <tr>
+                        <td colspan = "3" align = "left"> 고객님의 총 주문 합계 금액입니다 </td><td colspan = "2" align = "right"> [상품구매금액]:<br> 배송비: <br> 총 주문 합계 금액  </td><td colspan = "2" align = "right">19,000원 <br> 3,000원 <br> 21,000원</td>
+                        </tr>    
+                    </table>
+                </div>
+                <div id = "button">
+                    <ul>
+                        <li><img src = "img/order_button1.gif"></li>
+                        <li><img src = "img/order_button2.gif"></li>
+                        <li><img src = "img/order_button3.gif"></li>
+                        <li><img src = "img/order_button4.gif"></li>
+                        <li><img src = "img/order_button5.gif"></li>
+                        <li><img src = "img/order_button6.gif"></li>
+                    </ul>
+                </div>
+            </section>
+          <div> <img id = TEL src = "img/customer.png" width = "300"></div>
         </main>
         <footer>
             <div id = bottommenu>
