@@ -25,6 +25,10 @@
             height : 100px ;
         }
 
+        a {
+         text-decoration: none;
+        }
+
         #logo {
             margin-top : 25px;
             margin-right : 20px;
@@ -68,6 +72,7 @@
             height : 800px;
             /* border : 1px solid red; */
             float : left;
+        
          }
 
          aside #loginbox {
@@ -129,108 +134,120 @@
         }
          
         #sub_bottom {
-            padding-top: 20px;
+            margin-top: 20px;
+            border : 2px solid rgb(179, 175, 175);
+            border-radius: 10px;
         }
+
         main {
             width : 800px;
             height: 800px;
             margin-left: 180px;
             /* border : 1px solid red; */
-     
         }
-
-         main #main_img{
-            margin-top: 20px;
-            margin-left:10px;
-            float : left;
-         }
-
-        #notice {
-        width:400px;
-        height:111px;
-        float:left;
-        margin-top:30px;		
-        margin-left:10px;
+        #board {
+            padding-left: 30px;
+            height: 800px;
         }
-        #notice_top {
-            border-bottom : 1px solid rgb(179, 175, 175);
-            width: 400px; 
-            height: 30px;
-
-        }
-        #book {
+ 
+        #main_img {
+            width:758px;
             float: left;
+            margin-left: 25px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
 
-        #notice .title {
-        margin-left:10px;
-        float:left;
+        #board #board1{
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgb(179, 175, 175)
+    
         }
 
-        #notice .more {
-        float:right;
+        #board #board3{
+            float : left;
+            padding-top : 8px;
+            
         }
+       
+        #board #board4 select{
+            margin-top: 10px;
+            float : left;
+            margin-left : 10px;
+        }
+        #board_img{
+            float : left;
+            margin-top: 10px;
+            margin-left : 180px;
+        }
+        #board_input {
+            margin-top: 10px;
+            float :left;
+            padding-left : 10px;
+        } 
+        #board_button {
+            margin-top: 10px;
+            float : left;
+            padding-left : 10px;
 
-        #notice ul {
-        margin-top:12px;
-        color:#666666;
         }
+        #board table {
+            width: 770px;
 
-        #notice li {
-        margin-top:5px;
-        }
-
-        #notice .subject {
-        float:left;
-        margin-left:10px;
-        }
-
-        #notice .date {
-        float:right;
-        margin-right:5px;
-        }
-
-        #youtube {
-            margin-top:30px;		
-            margin-right:40px;
-            float : right;
-        }
-
-        #youtube .more {
-        float:right;
-        }
-        #youtube_top {
-            border-bottom : 1px solid rgb(179, 175, 175);
-            width: 300px; 
-            height: 30px;
-        }
-        #youtube #youtbue_img {
-            padding-top: 10px;
         }
         
-        #photo{
-        width:700px;
-        height:160px;
-        float:left;
-        margin-top:50px;		
-        margin-left:20px;
-
+        #board table {
+            border-top : 3px solid rgb(179, 175, 175);
+            border-bottom : 3px solid rgb(179, 175, 175);  
+            border-collapse: collapse;                      
         }
 
-        #photo1 {
-            border : 1px solid rgb(179, 175, 175);
-            width : 700px;
-            height : 180px;
-            border-radius: 10px;
+        #board table tr th {
+            background-color: rgb(233, 231, 231);
+            height: 30px;
         }
-        #photo1 div {
-            float : left;
+
+        #board table .b1 {
             padding-top: 10px;
-            padding-left: 20px;
-            padding-right:20px;
+            padding-bottom: 10px;
+            text-align: center;
+            
+        }
+
+        #board table .b3 {
+            padding-top: 10px;
+            padding-bottom: 10px;
             text-align: center;
         }
-        
+
+        #board table .b4 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        #board table .b5 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        #board table td {
+            border-bottom : 1px solid rgb(179, 175, 175);
+        }
+
+        #board #buttons .b6 {
+            padding-top: 10px;
+            padding-left: 300px;
+            float : left;
+        }
+
+        #board #buttons .b7{
+            padding-top: 10px;
+            text-align: right;
+        }    
+
+
         footer {
             /* border : 1px solid red; */
             margin-top: 30px;
@@ -272,7 +289,7 @@
             <img id = "logo" src = "img/logo.png">
             <img id = "mainmenu" src = "img/main_menu_bg.png">
             <ul id="main_menu">
-                <li> 자유 게시판 </li>
+                <a href = "board_list.html"> <li>자유 게시판 </li></a>
                 <li> 기타 연주</li>
                 <li> 공동 구매</li>
                 <li> 연주회 안내</li>
@@ -299,7 +316,7 @@
             <div class = "community">
                <div class = "background-Wrap">
                     <div class = "content">           
-                    <span> + 자유 게시판</span><br><br>
+                        <a href = "board_list.html"><span> + 자유 게시판</span></a><br><br>
                     <span> + 방명록 </span><br><br>
                     <span> + 공지사항</span><br><br>
                     <span> + 등업 요청 </span><br><br>
@@ -315,8 +332,71 @@
             </div>
         </aside>
     <main>
-            <img id = "main_img" src = "img/comm.gif">
+        <img id = "main_img" src = "img/comm.gif">
+        <section id = "board">        
+        <h3 id = board1>자유 게시판</h3>
+        <div id = board2>
+            <div id = board3> ▷ 총 5개의 게시물이 있습니다.</div>
+            <div id = board4> 
+                <div id = board_img><img src = "img/select_search.gif"></div>
+                <select>
+                    <option>제목</option>
+                </select>
+            </div>
+                <div id = "board_input"><input type = "text"></input></div>
+                <div id = "board_button"><img src = "img/search_button.gif"></div>
+            </div>
 
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>일시</th>
+                <th>조회수</th>
+            </tr>
+            <tr>
+                <td class = b1>1</td>
+                <td class = b2>
+                    <a href = "board_view.html">
+                        까스통님의 선물인 보드카가 정말 독하네요!!!
+                        </a>
+                </td>
+                <td class = b3>루바토</td>
+                <td class = b4>2017-09-20</td>
+                <td class = b5>15</td>
+            </tr>
+            <tr id = b8>
+                <td class = b1>1</td>
+                <td class = b2>
+                    <a href = "board_view.html">
+                        까스통님의 선물인 보드카가 정말 독하네요!!!
+                        </a>
+                </td>
+                <td class = b3>루바토</td>
+                <td class = b4>2017-09-20</td>
+                <td class = b5>15</td>
+            </tr>
+            <tr>
+                <td class = b1>1</td>
+                <td class = b2>
+                    <a href = "board_view.html">
+                    까스통님의 선물인 보드카가 정말 독하네요!!!
+                    </a>
+                </td>
+                <td class = b3>루바토</td>
+                <td class = b4>2017-09-20</td>
+                <td class = b5>15</td>
+            </tr>
+        </table>
+        <div id = "buttons">
+            <div class = b6> ◀  이전 1 다음  ▶</div>
+            <div class = b7>
+               <a href = "board_list.html"> <img src = "img/list.png"></a>
+               <a href = "board_write.html"><img src = "img/write.png"></a>
+            </div>
+        </div>
+    </section>  
      </main>   
     <footer>
         <div id = bottom >
