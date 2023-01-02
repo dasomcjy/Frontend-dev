@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+*{ margin : 0;
+  padding : 0;}
+
+body {
+  background-color: rgb(242 240 240);
+}
+
+#ART {
+  width : 1400px;
+  margin : auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clear {
+  clear:both;
+
+}
+header #head {
+  margin-top : 30px;
+
+}
+
+header #logo {
+  float : left;
+
+}
+
+header #search {
+  width : 600px;
+
+  float: left;
+}
+
+header #searchtext {
+  font-size: 20px;
+  color: rgb(150 193 31);
+  float : left;
+  margin-left: 200px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+header #searchbox {
+  width : 100px;
+  height: 20px;
+  border-bottom: 2px solid rgb(194, 192, 192);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(242 240 240);
+  float : left;
+  padding-top: 10px;
+}
+
+header #searchimg {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+header #righttop {
+  float : right;
+  margin-top: 10px;
+
+}
+
+
+header #righttop ul {
+  display: inline-block;
+}
+
+header #righttop ul #green{ 
+  color : rgb(150 193 31);
+} 
+
+header #righttop ul li {
+  float : left;
+  margin-left : 10px;
+  color : rgb(194, 192, 192);
+}
+
+header #topmenu {
+  margin-top: 30px;
+  height: 40px;
+  background-color: rgb(78 76 77);
+  text-align: center;
+  line-height: 40px;
+}
+
+header #topmenu ul {
+  display: inline-block;
+
+}
+
+header #topmenu ul li {
+  float : left;
+  color : white;
+  margin-left: 70px;
+  margin-right: 70px;
+
+}
+
+main {
+  height : 1800px;
+}
+
+main #leftbox{
+  width : 300px;
+  height: 550px;
+  margin-top: 20px;
+  float :left;
+}
+
+main #leftbox #cat #cattitle {
+  font-size: 20px;
+  background-color: rgb(150 193 31);
+  height : 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+main #leftbox #cat #catcontent li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(194, 192, 192);
+  padding-left: 30px;
+  color:rgb(104, 102, 102);
+
+}
+
+main #mainimg {
+  width: 700px;
+  float: left;
+  margin-top: 20px;
+}
+
+main #rightbox #notice{
+  background-image: url(img/latest_notice.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float : right;
+  width : 350px;
+  height : 250px;
+  margin-right: 20px;
+  margin-top : 20px;
+}
+
+main #rightbox #notice ul {
+  margin-left: 30px;
+  margin-top: 60px;
+  list-style-image: url(img/blue_dot.gif);
+}
+
+main #rightbox #notice li {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+main #rightbox #event{
+  background-image: url(img/week_event.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  float : right;
+  width: 350px;
+  height : 250px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+main #rightbox #event img {
+  margin-top: 90px;
+  margin-left: 30px;
+  width:250px;
+}
+
+main #mainmidleft #specialshop{
+  width: 700px;
+  height: 450px;
+  background-image: url(img/special_shop.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  float : left;
+}
+
+main #mainmidleft #specialshop img {
+  margin-top: 80px;
+  margin-left: 60px;
+  width: 250px;
+}
+
+main #mainmidright #landscape {  
+background-image: url("img/landscape.gif");
+background-repeat: no-repeat;
+background-size: 600px;;
+width: 600px;
+height: 160px;
+float : right;
+margin-right: 30px;
+}
+
+main #mainmidright #landscape img {
+  float : right;
+  margin-top: 20px;
+  margin-right: 20px;
+  width : 160px;
+  height : 120px;
+}
+
+main #mainmidright #point {
+    background-image: url(img/point_wallpaper.gif);
+    background-repeat : no-repeat;
+    background-size: 600px;;
+    width: 600px;
+    height: 160px;
+    float : right;
+    margin-right: 30px;
+}
+
+main #mainmidright #point img {
+  float : right;
+  margin-top: 20px;
+  margin-right: 20px;
+  width : 160px;
+  height : 120px;
+  
+}
+
+main #mainmidright #child {
+    background-image: url(img/children.gif);
+    background-repeat : no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 150px;
+    float : right;
+    margin-right: 30px;
+}
+
+main #mainmidright #child img {
+  float : right;
+  margin-top: 20px;
+  margin-right: 20px;
+  width : 160px;
+  height : 120px;
+}
+
+main #mainbottom #newtitle {
+  color :rgb(104, 102, 102);
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left : 30px;
+  margin-bottom: 20px;
+}
+
+main #mainbottom #newtitle span {
+  color : rgb(150 193 31);
+}
+
+main #mainbottom #product{
+  margin-left: 60px;
+}
+
+main #mainbottom #product #p {
+  float : left;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+}
+
+main #mainbottom #product #p img {
+
+  width : 280px;
+}
+
+main #mainbottom #product div #green {
+  color:rgb(150 193 31);
+  font-size: 18px
+}
+
+main #mainbottom #product div #gray {
+  color:rgb(104, 102,102);
+  font-size: 15px;
+}
+
+main #mainbottom #product div #price {
+  font-weight: 700;
+}
+
+footer {
+  height : 250px;
+
+}
+
+footer #bottommenu {
+  margin-top: 30px;
+  height: 40px;
+  background-color: rgb(78 76 77);
+  text-align: center;
+  line-height: 40px;
+}
+
+footer #bottommenu ul {
+  display: inline-block;
+
+}
+
+footer #bottommenu ul li {
+  float : left;
+  color : white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer #bottomlogo {
+  margin-top: 60px;
+  margin-left: 100px;
+  float : left;
+}
+
+
+footer #bottomtext ul {
+  color :rgb(104, 102,102);
+  margin-left : 100px;
+  margin-top: 30px;
+  width : 600px;
+  float : left;
+}
+
+footer #bottomlogo2 {
+  float : left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+</style>
+<body>
+  <div id = "ART">
+    <header>
+    <div id = "head">
+      <img id = "logo" src = "img/logo.gif">
+      <div id = "search">
+        <div id = searchtext>
+          search
+        </div>
+        <input id = searchbox type "text">
+        <div>
+        <img id = searchimg src = "img/btn_search.gif">
+        </div>
+      </div>
+      <div id = righttop>
+        <ul>
+          <li id = green> 로그인 </li>
+          <li id = green> 회원가입 </li>
+          <li> 마이페이지 </li>
+          <li> 이용안내 </li>
+          <li> 고객센터 </li>
+        </ul>
+      </div>
+      <div class = "clear"></div>
+      <div id = topmenu>
+        <ul>
+          <li> 상세페이지 </li>
+          <li> 장바구니 </li>
+          <li> 고객 갤러리 </li>
+          <li> 주문배송 </li>
+          <li> 자주 하는 질문 </li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section id = leftbox>
+        <div id = cat>
+          <div id = cattitle>
+            CATEGORY ITEM
+          </div>
+          <div id = catcontent>
+            <ul>
+              <li>생활 아트</li>
+              <li>캔버스 아트</li>
+              <li>사진 벽지</li>
+              <li>창문형/현관문형</li>
+              <li>포인트 벽지</li>
+              <li>세계지도</li>
+              <li>엔티크 세계지도 벽지</li>
+              <li>입체 세계지도 벽지</li>
+              <li>어린이방 세계지도</li>
+              <li>족자형 롤스크린</li>
+              <li>맞춤제작 결제창</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div id = mainimg>
+        <img src = "img/main_img.gif" width = "700px" height = "500">
+      </div>
+      <section id = rightbox>
+        <div id = notice>
+          <ul>
+            <li>폭설로 인한 배송지연 안내</li>
+            <li>폭설로 인한 배송지연 안내</li>
+            <li>폭설로 인한 배송지연 안내</li>
+            <li>폭설로 인한 배송지연 안내</li>
+            <li>폭설로 인한 배송지연 안내</li>
+            <li>폭설로 인한 배송지연 안내</li>
+          </ul>
+        </div>
+        <div id = event>
+          <img src = "img/week_event_img.gif">
+        </div>
+      </section>
+      <div class = "clear"></div>
+      <section id = mainmidleft>
+        <div id = specialshop>
+          <img src = "img/special_img1.gif">
+          <img src = "img/special_img2.gif">          
+        </div>
+      </section>
+      <section id = mainmidright>
+        <div id = landscape>
+          <img src = "img/landscape_img1.gif">
+          <img src = "img/landscape_img2.gif">
+        </div>
+        <div id = point>
+          <img src = "img/point_wallpaper_img1.gif">
+          <img src = "img/point_wallpaper_img2.gif">
+        </div>
+        <div id = child>
+          <img src = "img/children_img1.gif">
+          <img src = "img/children_img2.gif">
+        </div>
+      </section>
+      <div class = "clear"></div>
+      <section id = mainbottom>
+        <div id = new>
+          <div id = newtitle>
+            <Span> NEW ARRIVAL</Span> 신규 상품
+          </div>
+          <div id = product >
+            <div id = p>
+              <img src = "img/new_01.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_02.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_03.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_04.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div class = "clear"></div>
+            <div id = p>
+              <img  src = "img/new_05.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_06.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_07.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+            <div id = p>
+              <img  src = "img/new_08.jpg">
+              <ul>
+                <li id = green> 맞춤제작(풍경) </li>
+                <li id = gray> 원하는 사이즈로 제작 가능</li>
+                <li id = price> 20,000원 </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class = "clear"></div>  
+    <footer>
+      <div id = bottom>
+        <div id = bottommenu>
+            <ul>
+              <li> 회사소개 </li>
+              <li> 이용안내 </li>
+              <li> 장바구니 </li>
+              <li> 주문조회 </li>
+              <li> 적립금 </li>
+              <li> 이용약관 </li>
+              <li> 개인정보보호정책 </li>
+              <li> 고객센터 </li>
+            </ul>
+        </div>
+        <img id = bottomlogo src = "img/footer_logo.gif">
+        <div id = bottomtext>
+          <ul>
+            <li>상호 : 다연아트 대표 : 이승주 개인정보관리책임자: 이승주(sjdayoun@naver.com)</li>
+            <li>주소: 경기도 고양시 덕양구 고양동 160번지 전화 : 031-967-6218, 031-967-6219</li>
+            <li>사업자등록번호 [104-03-41624] 통신판매업 신고 (제 경기고양 - 234호)</li>
+            <li>Copyright@2009 dayunart.com All rights reserved </li>
+          </ul>
+        </div>
+        <img id = bottomlogo2 src ="img/footer_banner_01.gif">
+        <div class = "clear"></div>
+      </div>
+    </footer>
+    </div>
+</body>
+</html>
