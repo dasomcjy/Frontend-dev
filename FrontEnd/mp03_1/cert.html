@@ -113,7 +113,7 @@ header #topmenu ul li {
 }
 
 main {
-  height : 1800px;
+  height : 800px;
 }
 
 main #leftbox{
@@ -152,7 +152,6 @@ main #tel img{
 main #cart {
   width : 1050px;
   float : right;
-  border: 1px solid red;
 }
 
 main #cart #carttitle {
@@ -171,11 +170,55 @@ main #cart #pro {
   margin-left: 20px;
 }
 
-main #cart table {
-  width : 1050px;
-  height: 400px;
-  border : 1px solid red;
+main #chart table {
+        text-align: center;
+        width :1050px;
+        border-top: 3px solid rgb(155 195 42); 
+        border-collapse: collapse;    
+        border-left: 1px solid rgb(78 76 77);
+        border-right: 1px solid rgb(78 76 77);
+        
+    }
+
+main  #chart table th {
+        background-color: rgb(185, 183, 183);
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+main   #chart table td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom : 2px solid rgb(78 76 77); 
+        border-top: 2px solid rgb(78 76 77); 
+    }
+
+main   #chart table #pri {
+  padding-right: 20px;
+} 
+
+main   #chart table #pri2 {
+  padding-left : 20px;
+} 
+
+main   #chart table #pri3 {
+  padding-right: 20px;
+} 
+
+main #button img {
+  width : 120px;
 }
+
+main #button ul {
+    margin-top: 30px;
+    text-align: center;
+    }
+
+    #button ul li {
+    display: inline-block;
+    text-align: center;
+    }
+
 
 footer {
   height : 250px;
@@ -227,7 +270,7 @@ footer #bottomlogo2 {
   <div id = "ART">
     <header>
     <div id = "head">
-      <img id = "logo" src = "img/logo.gif">
+      <a href = "index.html"><img id = "logo" src = "img/logo.gif"></a>
       <div id = "search">
         <div id = searchtext>
           search
@@ -249,8 +292,8 @@ footer #bottomlogo2 {
       <div class = "clear"></div>
       <div id = topmenu>
         <ul>
-          <li> 상세페이지 </li>
-          <li> 장바구니 </li>
+          <a href = "detail.html"><li> 상세페이지 </li></a>
+          <a href = "cert.html"><li> 장바구니 </li></a>
           <li> 고객 갤러리 </li>
           <li> 주문배송 </li>
           <li> 자주 하는 질문 </li>
@@ -322,10 +365,10 @@ footer #bottomlogo2 {
                   <td class = a7>22,000원</td>
               </tr>
               <tr>
-                  <td colspan = "7" align = "right"> [상품 구매 금액] : 19,000 + [배송비] : 3,000 = [총구매액]:22,000원 </td>
+                  <td id = pri colspan = "7" align = "right"> [상품 구매 금액] : 19,000 + [배송비] : 3,000 = [총구매액]:22,000원 </td>
               </tr>
               <tr>
-              <td colspan = "3" align = "left"> 고객님의 총 주문 합계 금액입니다 </td><td colspan = "2" align = "right"> [상품구매금액]:<br> 배송비: <br> 총 주문 합계 금액  </td><td colspan = "2" align = "right">19,000원 <br> 3,000원 <br> 21,000원</td>
+              <td id = pri2 colspan = "3" align = "left"> 고객님의 총 주문 합계 금액입니다 </td><td colspan = "2" align = "right"> [상품구매금액]:<br> 배송비: <br> 총 주문 합계 금액  </td><td id = pri3 colspan = "2" align = "right">19,000원 <br> 3,000원 <br> 21,000원</td>
               </tr>    
           </table>
       </div>

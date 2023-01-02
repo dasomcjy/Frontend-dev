@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+*{ margin : 0;
+  padding : 0;}
+
+body {
+  background-color: rgb(242 240 240);
+}
+
+#ART {
+  width : 1400px;
+  margin : auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clear {
+  clear:both;
+
+}
+header #head {
+  margin-top : 30px;
+
+}
+
+header #logo {
+  float : left;
+
+}
+
+header #search {
+  width : 600px;
+
+  float: left;
+}
+
+header #searchtext {
+  font-size: 20px;
+  color: rgb(150 193 31);
+  float : left;
+  margin-left: 200px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+header #searchbox {
+  width : 100px;
+  height: 20px;
+  border-bottom: 2px solid rgb(194, 192, 192);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(242 240 240);
+  float : left;
+  padding-top: 10px;
+}
+
+header #searchimg {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+header #righttop {
+  float : right;
+  margin-top: 10px;
+
+}
+
+
+header #righttop ul {
+  display: inline-block;
+}
+
+header #righttop ul #green{ 
+  color : rgb(150 193 31);
+} 
+
+header #righttop ul li {
+  float : left;
+  margin-left : 10px;
+  color : rgb(194, 192, 192);
+}
+
+header #topmenu {
+  margin-top: 30px;
+  height: 40px;
+  background-color: rgb(78 76 77);
+  text-align: center;
+  line-height: 40px;
+}
+
+header #topmenu ul {
+  display: inline-block;
+
+}
+
+header #topmenu ul li {
+  float : left;
+  color : white;
+  margin-left: 70px;
+  margin-right: 70px;
+
+}
+
+main {
+  height : 1400px;
+}
+
+main #leftbox{
+  width : 300px;
+  height: 550px;
+  margin-top: 20px;
+  float :left;
+}
+
+main #leftbox #cat #cattitle {
+  font-size: 20px;
+  background-color: rgb(150 193 31);
+  height : 50px;
+  width: 300px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+main #leftbox #cat #catcontent li{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(194, 192, 192);
+  padding-left: 30px;
+  color:rgb(104, 102, 102);
+
+}
+
+main #tel img{
+  width : 280px;
+  border : 1px solid rgb(104, 102,102);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+main #main1 {
+  width : 1050px;
+  float : right;
+  margin-top: 30px;
+}
+
+main #main1 #main1title {
+  font-size: 20px;
+  width : 1050px;
+  padding-bottom: 15px;
+  border-bottom : 2px solid rgb(78 76 77);
+}
+
+main #main1 #main1title span {
+  color :rgb(150 193 31);
+}
+
+main #main1 #main1img {
+  width : 450px;
+}
+
+main #main1 #main1left {
+  margin-top: 20px;
+  width : 450px;
+  float : left;
+}
+
+main #main1 #main1left2 {
+  text-align: center;
+}
+
+main #main1 #main1right {
+        width : 550px;
+        float:right;
+        margin-top: 20px;
+
+    }
+
+main #main1 #main1right #main1righttitle {
+  font-size: 22px;
+  height: 40px;
+  border-bottom: 2px solid rgb(78 76 77);
+  margin-bottom: 20px;
+} 
+
+main #main1 #main1right .item li {
+        margin: 10px 0 0 0 ;
+    }
+
+main #main1 #main1right .col1 {
+    
+    margin-left: 30px;   
+    width:100px;
+    float:left;
+    }
+
+main #main1 #main1right .col2{
+        width : 200px;
+        float : left;
+    }
+
+main #main1    #main1right .size {
+        margin-top: 40px;
+        padding: 20px 0 0 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(141, 140, 141);
+        border-top:  1px solid rgb(141, 140, 141);
+    }
+
+main #main1    #main1right .size li {
+        margin: 5px 0;
+    }
+
+main #main1    #main1right .buttons {
+        margin:15px 0 0 150px;
+    }
+
+main #main1 #main1right .buttons li {
+        display : inline;
+    }
+
+main #main2 {
+  width : 1050px;
+  float : right;
+  margin-top: 30px;
+}    
+
+main #main2 #main2title {
+  color :rgb(150 193 31);
+  font-size: 22px;
+  height: 40px;
+  border-bottom: 2px solid rgb(78 76 77);
+  margin-bottom: 20px;
+}     
+
+main #main2 #ex {
+  font-size: 20px;
+  font-weight:bold;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+main #main2 #exbox {
+  margin-left: 20px;
+  border : 3px solid rgb(78 76 77);
+  background-color: white ;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+main #main2 #exbox ul {
+  border-bottom: 2px solid rgb(194, 192, 192);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main #main2 #exbox li {
+  float : left;
+}
+
+main #main2 #e1 {
+  font-size: 20px;
+  margin : 10px;
+}
+
+main #main2 #e2 {
+  font-size: 18px;
+  margin : 10px;
+}
+
+main #main2 #blue {
+  font-size: 18px;
+  margin : 10px;
+  color :blue
+}
+
+main #main3 {
+  width : 1050px;
+  float : right;
+  margin-top: 30px;
+}    
+
+
+main #main3 #mbtitle {
+  color :rgb(150 193 31);
+  font-size: 22px;
+  height: 40px;
+  border-bottom: 2px solid rgb(78 76 77);
+  margin-bottom: 20px;
+}     
+
+main #main3 #mb11 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+main #main3 #mb12 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+main #main3 li {
+  margin-left: 30px;
+}
+
+footer {
+  height : 250px;
+
+}
+
+footer #bottommenu {
+  margin-top: 30px;
+  height: 40px;
+  background-color: rgb(78 76 77);
+  text-align: center;
+  line-height: 40px;
+}
+
+footer #bottommenu ul {
+  display: inline-block;
+
+}
+
+footer #bottommenu ul li {
+  float : left;
+  color : white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+footer #bottomlogo {
+  margin-top: 60px;
+  margin-left: 100px;
+  float : left;
+}
+
+
+footer #bottomtext ul {
+  color :rgb(104, 102,102);
+  margin-left : 100px;
+  margin-top: 30px;
+  width : 600px;
+  float : left;
+}
+
+footer #bottomlogo2 {
+  float : left;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+</style>
+<body>
+  <div id = "ART">
+    <header>
+    <div id = "head">
+      <a href = "index.html"><img id = "logo" src = "img/logo.gif"></a>
+      <div id = "search">
+        <div id = searchtext>
+          search
+        </div>
+        <input id = searchbox type "text">
+        <div>
+        <img id = searchimg src = "img/btn_search.gif">
+        </div>
+      </div>
+      <div id = righttop>
+        <ul>
+          <li id = green> 로그인 </li>
+          <li id = green> 회원가입 </li>
+          <li> 마이페이지 </li>
+          <li> 이용안내 </li>
+          <li> 고객센터 </li>
+        </ul>
+      </div>
+      <div class = "clear"></div>
+      <div id = topmenu>
+        <ul>
+          <a href = "detail.html"><li> 상세페이지 </li></a>
+          <a href = "cert.html"><li> 장바구니 </li></a>
+          <li> 고객 갤러리 </li>
+          <li> 주문배송 </li>
+          <li> 자주 하는 질문 </li>
+        </ul>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section id = leftbox>
+        <div id = cat>
+          <div id = cattitle>
+            CATEGORY ITEM
+          </div>
+          <div id = catcontent>
+            <ul>
+              <li>생활 아트</li>
+              <li>캔버스 아트</li>
+              <li>사진 벽지</li>
+              <li>창문형/현관문형</li>
+              <li>포인트 벽지</li>
+              <li>세계지도 벽지</li>
+              <li>어린이방 세계지도</li>
+              <li>족자형 롤스크린</li>
+              <li>맞춤제작 결제창</li>
+            </ul>
+          </div>
+        </div>
+        <div id = tel >
+          <img src = "img/customer.png"> 
+        </div>
+        <div class = "clear"></div>  
+      </section>
+      <section id = main1>
+        <div id = main1title>
+          <span> POINT MURAL </span> 포인트 뮤럴 벽지
+        </div>
+        <div id = main1left>
+          <img id = main1img src = "img/product_img.gif">
+          <div id = main1left2>
+            <img src = "img/btn_pre.gif">
+            <img src = "img/btn_show_big.gif">
+            <img src = "img/btn_next.gif">
+          </div>
+          
+        </div>
+        
+        <div id = main1right>
+          <div id = main1righttitle>
+            [맞춤제작] 화조도-2(연그레이)
+          </div>
+            <div class = "item">
+                <ul>
+                    <li>
+                        <div class = "col1">판매가</div>
+                        <div class = "col2">23,000원</div>
+                        <div class = "clear"></div>
+                    </li>
+                    <li>
+                        <div class = "col1">제조사</div>
+                        <div class = "col2">다연아트</div>
+                        <div class = "clear"></div>
+                    </li>
+                    <li>
+                        <div class = "col1">특징</div>
+                        <div class = "col2">원하는 사이즈로 제작 가능</div>
+                        <div class = "clear"></div>
+                    </li>
+                    <li>
+                        <div class = "col1">수량</div>
+                        <div class = "col2"><input type = "text"></div>
+                        <div class = "clear"></div>
+                    </li>
+                    <li>
+                        <div class = "col1">재질</div>
+                        <div class = "col2">
+                            <select>
+                                <option>== 옵션 선택 ==</option>
+                                <option>고급한지(23,000원)</option>
+                                <option>실크 벽지(28,000원)</option>
+                            </select>
+                        </div>
+                        <div class = "clear"></div>
+                    </li>
+                </ul>
+            </div>
+            <ul class = "size">
+                <li>
+                    <div class = "col1">주문 사이즈</div>
+                    <div class = "col2">
+                        <input type ="text"> cm
+                    </div>
+                    <div class = "clear"></div>
+                </li>
+                <li>
+                    <div class = "col1"> 금액 </div>
+                    <div class = "col2">
+                        <input type = "text"> 원
+                    </div>
+                    <div class ="clear"></div>
+                </li>
+            </ul>
+            <ul class = "buttons">
+                <li><img src = "img/btn_buy_now.gif"></li>
+                <li><img src = "img/btn_cart.gif"></li>
+            </ul>
+        </section>
+        <div class = "clear"></div>
+        <section id = main2>
+          <div id = main2title>
+            상품설명
+          </div>
+          <div id = ex>
+            "다연아트는 맞춤형 주문 제작 방식을 사용합니다"
+          </div>
+          <div id = exbox>
+            <ul>
+              <li id = e1>-품명</li>
+              <li id = e2>화조도-2(연그레이)</li>
+              <div class = "clear"></div>
+            </ul>
+            <ul>
+              <li id = e1>-재질</li>
+              <li id = e2>고급합지/실크 벽지</li>
+              <div class = "clear"></div>
+            </ul>
+            <ul>
+              <li id = e1>-크기</li>
+              <li id = e2>원하는 사이즈로 제작 가능합니다.</li>
+              <div class = "clear"></div>
+            </ul>
+            <ul>
+              <li id = e1>-가격</li>
+              <li id = e2>합지(23,000원)/실크 벽지(28,000원)</li>
+              <div class = "clear"></div>
+            </ul>
+            <ul>
+              <li id = e1>-문의</li>
+              <li id = blue > 031)123-1234</li>
+              <div class = "clear"></div>
+            </ul>
+          </div>
+        </section>
+        <div class = "clear"></div>
+        <section id = main3>
+          <div id = mbtitle>
+            유의사항
+          </div>
+          <div id = mb1>
+            <div id =mb11>
+              ○ 주문 전 참고 사항
+              <ul>
+                <li> - 세탁 여부 : 제품 특성상 세탁이 불가하니 진공청소기를 사용하세요</li>
+                <li> - 크기 오차 : 재단에 약간의 오차가 발생할 수 있습니다.</li>
+                <li> - 교환/환불 : 특별한 하자 이외에는 교환/환불이 불가합니다.</li>
+              </ul>
+            </div>
+            <div id =mb12>
+              ○ 배송
+              <ul>
+                <li> - 배송 지역 : 전국</li>
+                <li> - 배송 비용 : 개별 배송을 제외하고 20,000원 미만입니다.</li>
+                <li> - 배송 기간 : 2~3일 </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        </div>
+    </main>
+    <div class = "clear"></div>  
+    <footer>
+      <div id = bottom>
+        <div id = bottommenu>
+            <ul>
+              <li> 회사소개 </li>
+              <li> 이용안내 </li>
+              <li> 장바구니 </li>
+              <li> 주문조회 </li>
+              <li> 적립금 </li>
+              <li> 이용약관 </li>
+              <li> 개인정보보호정책 </li>
+              <li> 고객센터 </li>
+            </ul>
+        </div>
+        <img id = bottomlogo src = "img/footer_logo.gif">
+        <div id = bottomtext>
+          <ul>
+            <li>상호 : 다연아트 대표 : 이승주 개인정보관리책임자: 이승주(sjdayoun@naver.com)</li>
+            <li>주소: 경기도 고양시 덕양구 고양동 160번지 전화 : 031-967-6218, 031-967-6219</li>
+            <li>사업자등록번호 [104-03-41624] 통신판매업 신고 (제 경기고양 - 234호)</li>
+            <li>Copyright@2009 dayunart.com All rights reserved </li>
+          </ul>
+        </div>
+        <img id = bottomlogo2 src ="img/footer_banner_01.gif">
+        <div class = "clear"></div>
+      </div>
+    </footer>
+    </div>
+</body>
+</html>
