@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding : 0;
+      margin :0 ;
+    }
+
+    body {
+      width : 1000px;
+      margin :auto;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .row {
+      width : 350px;
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+    .row ul {   /* 자손 */
+      list-style-type: none;
+      margin : 0; padding : 0;
+    }
+
+    .row ul li {
+        display: inline-table;
+    }
+
+    #left {
+      width: 380px;
+      float : left;
+      text-align: center;
+      margin-top: 50px;
+      position : relative;
+    }
+
+    #left #box {
+      border : 3px dashed gainsboro;
+      width : 320px;
+      height: 330px;
+      position :absolute;
+      left: 30px;
+      top : 10px;
+      display: table;
+    }
+
+    #right {
+      width: 500px;
+      float : right;
+      margin-top : 50px
+    }
+
+    #right ul li {
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    #right #button {
+      width : 350px;
+      height : 60px;
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    #right #blue {
+      color : blue;
+
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1> 에디오피아 게뎁</h1>
+  <section id = left>
+    <div id = "lightbox"> 
+      <img src = "images/coffee-pink.jpg" alt=" " id = "lightboxImage">
+      <div id = box ></div>
+    </div>
+    <div class="row">
+      <ul>
+        <li><img src = "images/coffee-pink.jpg" width = "100" data-src="images/coffee-pink.jpg" class="pic"></li>
+        <li><img src = "images/coffee-blue.jpg" width = "100" data-src="images/coffee-blue.jpg" class="pic"></li>
+        <li><img src = "images/coffee-gray.jpg" width = "100" data-src="images/coffee-gray.jpg" class="pic"></li>
+      </ul>
+
+    </div>
+  </section>
+  <section id = right>
+    <div id = right1>
+      <ul>
+        <li>상품명 : 에디오피아 게뎁</li>
+        <li id = blue>판매가 : 9,000원 </li>
+        <li>배송비 : 3,000원 </li>
+        <li>(50,000원 이상 구매시 무료)</li>
+        <li>적립금 : 180원(2%)</li>
+        <li>로스팅 : 2019.06.17</li>
+      </ul>
+    </div>
+    <input id = button type="button" value="장바구니 담기">
+    <div id = blue>
+      상세 설명 보기
+    </div>
+  </section>
+
+  <script> 
+    var pics = document.getElementsByClassName("pic");
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImage = document.getElementById("lightboxImage");
+
+    for ( var i = 0 ; i < pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);
+    }
+
+
+    function showLightbox() { 
+        var bigLocation = this.getAttribute("data-src");     
+        lightboxImage.setAttribute("src" , bigLocation)
+        lightbox.style.display = "block";             
+    }
+
+    // 출력된 화면을 클릭시 다시 원래대로 되돌리는 함수
+    // lightbox.onclick = function() {
+    //   lightbox.style.display = "none" ;
+    // }
+
+  </script>
+</body>
+</html>
