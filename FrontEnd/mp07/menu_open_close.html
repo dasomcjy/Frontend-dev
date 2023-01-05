@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+#content {
+  display: none;
+}
+
+#toc-toggle {
+  color : olive;
+}
+</style>
+<body>
+  
+  목차 [<span id = "toc-toggle" onclick="openCloseToc()">보이기</span>]
+
+  <ol id = "content">
+      <li> HTML </li>
+      <li> CSS </li>
+      <li> JavaScript </li>
+  </ol>
+
+  <script>
+    function openCloseToc() {
+      // ol 태그의 내용은 기본적으로 보이지 않도록 설정
+      // 보이기를 클릭하면 ol 태그의 내용을 보이도록 함 <보이기> ==><접히기>
+    
+      if (document.getElementById('content').style.display === 'block'){
+        document.getElementById('content').style.display = 'none';
+        document.getElementById('toc-toggle').textContent ='보이기';
+      }else {
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('toc-toggle').textContent = '숨기기';
+      }
+    }
+  </script>
+
+</body>
+</html>
