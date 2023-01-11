@@ -1,8 +1,8 @@
-const toggleBtn = document.querySelector('#top_togglebuttn');
-const topmenu = document.querySelector('#topmenu');
+const togglebtn = document.querySelector('#top_togglebuttn');
+const menu = document.querySelector('#topmenu');
 const rightmenu = document.querySelector('#rightmenu');
 
-toggleBtn.addEventListener('click', () => {
-  topmenu.idList.toggle('active');
-  rightmenu.idList.toggle('active');
+togglebtn.addEventListener('click' , () => {
+  menu.classList.toggle('active');
+  rightmenu.classList.toggle('active');
 });

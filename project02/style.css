@@ -7,6 +7,7 @@
 
 body {
   margin : 0;
+  background-color : #263343;
 }
 
 a {
@@ -14,17 +15,23 @@ a {
   color:whitesmoke;
 }
 
+ul {
+  list-style-type: none;
+}
+
 #top {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: cneter;
-  background-color: #263343;
+  background-color: #145B71;
   padding : 8px 12px;
 }
 
 #top #logoimg {
  width: 300px;
  height: 150px;
+ margin-left: 100px;
 }
 
 #top #topmenu {
@@ -33,6 +40,7 @@ a {
   padding-left: 0;
   font-family: 'insungitCutelivelyjisu';
   font-size: 20px;
+  margin-top: 30px;
 }
 
 #top #topmenu li {
@@ -45,7 +53,7 @@ a {
 }
 
 #top #topmenu li:hover {
-  background-color : #d49466;
+  background-color : #CE9EAD;
   border-radius: 4px;
 }
 
@@ -55,9 +63,12 @@ a {
   display: flex;
   padding-left: 0;
   font-family: 'insungitCutelivelyjisu';
+  margin-right: 100px;
 }
 
 #top #rightmenu li {
+  width : 60px;
+  height: 20px;
   padding : 8px 12px;
 }
 
@@ -94,11 +105,141 @@ a {
 
   #top_togglebuttn {
     display: block;
+}
+
+#topmenu.active,
+#rightmenu.active {
+  display: block;
+}
 
 }
 
-#sea #top #topmenu.active,
-#sea #top #rightmenu.active {
+main {
+  width : 1500px;
+  margin : 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main #leftbox {
+  margin-top: 50px;
+  width : 700px;
+  background-color: #d9f3ffcc;
+}
+
+main #leftbox #bookimg img {
+  width : 200px;
+  height : 250px;
+  margin : 10px;
+  
+}
+
+main #leftbox #bookimg {
+  margin-top: 50px;
+}
+
+main #leftboxtitle {
+  display: flex;
+  font-family: 'insungitCutelivelyjisu';
+  color: #D9F3FF;
+  font-size: 30px;
+  background-color: #CE9EAD;
+  width: 400px;
+  
+}
+
+main #leftboxtitle img {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+main #leftboxtext {
+  width: 250px;
+  height: 70px;
+  line-height: 70px;
+}
+
+main #rightbox {
+  margin-top: 50px;
+  width : 700px;
+  background-color: #d9f3ffcc;
+
+}
+
+main #rightbox #rightcontent {
   display : flex;
+  flex-direction: column;
 }
+
+main #rightbox #rightcontent img {
+ width: 600px;
+ height: 200px;
+ margin-left: 50px;
+}
+
+
+main #rightboxtitle {
+  display: flex;
+  font-family: 'insungitCutelivelyjisu';
+  color: #D9F3FF;
+  font-size: 30px;
+  background-color: #CE9EAD;
+  width: 400px;
+  margin-bottom: 50px;
+  
+}
+
+main #rightboxtitle img {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+main #rightboxtext {
+  width: 250px;
+  height: 70px;
+  line-height: 70px;
+}
+
+footer #bottom {
+    margin-top: 20px;
+    display: flex;
+    min-width: 400px;
+    justify-content: space-between;
+    align-items: cneter;
+    background-color: #145B71;
+    padding : 8px 12px;
+  }
+
+footer #logoimg {
+  width: 200px;
+  margin-left: 100px;
+}
+
+footer #mob {
+  margin-right: 100px;
+}
+
+footer #mob ul{
+  display: flex;
+}
+
+
+footer #mob ul li{
+  margin: 10px;
+}
+
+
+
+
+footer #custom {
+  font-family: 'insungitCutelivelyjisu';
+  color: #D9F3FF;
+}
+
+footer #custom ul li {
+  margin-top: 10px;
+}
+
+footer #mob img {
+  width: 50px;
 }
