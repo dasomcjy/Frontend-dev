@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'insungitCutelivelyjisu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/insungitCutelivelyjisu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin : 0;
+}
+
+a {
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: cneter;
+  background-color: #263343;
+  padding : 8px 12px;
+}
+
+#top #logoimg {
+ width: 300px;
+ height: 150px;
+}
+
+#top #topmenu {
+  display : flex;
+  list-style: none;
+  padding-left: 0;
+  font-family: 'insungitCutelivelyjisu';
+  font-size: 20px;
+}
+
+#top #topmenu li {
+  width : 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  padding-top: 20px;
+  padding: 10px 14px;
+}
+
+#top #topmenu li:hover {
+  background-color : #d49466;
+  border-radius: 4px;
+}
+
+#top #rightmenu {
+  list-style: none;
+  color : whitesmoke;
+  display: flex;
+  padding-left: 0;
+  font-family: 'insungitCutelivelyjisu';
+}
+
+#top #rightmenu li {
+  padding : 8px 12px;
+}
+
+#top_togglebuttn {
+  display: none;
+  position : absolute;
+  right :32px;
+}
+
+@media screen and (max-width : 800px) {
+  #sea #top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding : 8px 24px;
+  }
+
+  #sea #top #topmenu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width : 100%;
+  }
+
+  #sea #top #topmenu li {
+    width : 100%;
+    text-align: center;
+  }
+
+  #sea #top #rightmenu {
+    display: none;
+    justify-content: center;
+    width : 100%;
+  }
+
+  #top_togglebuttn {
+    display: block;
+
+}
+
+#sea #top #topmenu.active,
+#sea #top #rightmenu.active {
+  display : flex;
+}
+}
