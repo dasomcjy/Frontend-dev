@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'insungitCutelivelyjisu';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/insungitCutelivelyjisu.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pro3 {
+  padding : 0;
+  margin : 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #F1F1E6;
+}
+
+body {
+  margin : 0;
+  background-color : #263343; 
+}
+
+header {
+  height:120px;
+  /* border : 1px red solid; */
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'insungitCutelivelyjisu';
+  color: #F1F1E6;
+  margin-top: 20px;
+}
+
+header .logo{
+  margin-left: 20px;
+}
+
+header .logoimg {
+  width : 150px;
+  height:80px;
+}
+
+header .topmenu {
+  display : flex;
+  /* border : 1px red solid; */
+  width: 600px;
+  height: fit-content;
+}
+
+header .topmenu li {
+  margin : 10px;
+  padding : 10px;
+  font-size: 25px;
+  width : 120px;
+  height: fit-content;
+  /* border : 1px red solid; */
+}
+
+header .rightmenu {
+  display : flex;
+  width:fit-content;
+  /* border : 1px red solid; */
+}
+
+header .rightmenu li {
+  padding : 10px;
+  font-size: 20px;
+  width: 80px;
+  height: fit-content;
+}
+
+main {
+width : 1400px;
+margin: 0 auto;
+}
+
+main .imgbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 1rem;
+}
+
+main .imgbox img {
+  width : 100%;
+  height : 100%;
+  object-fit: cover;
+}
+
+main .box1 {
+  border-top : 2px solid  #F1F1E6;
+  border-bottom : 2px solid  #F1F1E6;
+  font-family: 'insungitCutelivelyjisu';
+  color : #FFEDCB;
+  height: 300px;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 20px;
+}
