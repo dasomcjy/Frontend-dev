@@ -35,15 +35,16 @@ header .top {
   font-family: 'insungitCutelivelyjisu';
   color: #F1F1E6;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 header .logo{
-  margin-left: 20px;
+  margin-left:40px;
 }
 
 header .logoimg {
   width : 150px;
-  height:80px;
+  height: 80px;
 }
 
 header .topmenu {
@@ -53,13 +54,18 @@ header .topmenu {
   height: fit-content;
 }
 
+header .topmenu li:hover {
+  color : #CE9EAD;
+  border-radius: 4px;
+}
+
 header .topmenu li {
   margin : 10px;
   padding : 10px;
   font-size: 25px;
   width : 120px;
   height: fit-content;
-  /* border : 1px red solid; */
+  text-align: center;
 }
 
 header .rightmenu {
@@ -72,7 +78,7 @@ header .rightmenu li {
   padding : 10px;
   font-size: 20px;
   width: 80px;
-  height: fit-content;
+  height: fit-content; 
 }
 
 main {
@@ -93,6 +99,104 @@ main .imgbox img {
   object-fit: cover;
 }
 
+
+main .box1text {
+  height : 100px;
+}
+
+main .box2 {
+  background-image: url("img/데미안.png");
+  background-size: contain;
+}
+
+main .box3 {
+  background-image: url("img/해빗.png");
+  background-size: contain;
+}
+
+main .box4 {
+  background-image: url("img/눈먼자들의\ 도시.png");
+  background-size: contain;
+}
+
+main .box5 {
+  background-image: url("img/아버지의\ 해방일지.png");
+  background-size: contain;
+}
+
+main .box6 {
+  background-image: url("img/지구가\ 평평하다고\ 믿는\ 삶과\ 즐겁고\ 생산적인\ 대화를\ 나누는법.png");
+  background-size: contain;
+}
+
+main .box7 {
+  background-image: url("img/제인에어.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .box8 {
+  background-image: url("img/소년이온다.png");
+  background-size: contain;
+}
+
+main .box9 {
+  background-image: url("img/밝은밤.png");
+  background-size: contain;
+}
+
+main .box10 {
+  background-image: url("img/물고기는\ 존재하지\ 않는다.png");
+  background-size: contain;
+}
+
+main .box11 {
+  background-image: url("img/모모.png");
+  background-size: contain;
+}
+
+
+main .imgbox .text {
+  font-size: 25px;
+  font-family: 'insungitCutelivelyjisu';
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 450px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+main .imgbox .text:hover{
+  opacity: 1;
+}
+
+main .box1 input {
+  width : 200px;
+  height: 50px;
+  font-family: 'insungitCutelivelyjisu';
+  font-size: 15px;
+  text-align: center;
+  background-color: #263343; 
+  border-style: none;
+  border-bottom: 2px solid  #F1F1E6;
+  line-height: 10px;
+}
+
+main .box1 button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  font-family: 'insungitCutelivelyjisu';
+  background-color: #263343; 
+  border: 2px solid  #F1F1E6;
+  color: #F1F1E6;
+  margin-left: 20px;
+}
+
 main .box1 {
   border-top : 2px solid  #F1F1E6;
   border-bottom : 2px solid  #F1F1E6;
@@ -101,6 +205,116 @@ main .box1 {
   height: 300px;
   margin-top: 100px;
   text-align: center;
-  line-height: 100px;
+  line-height: 150px;
   font-size: 20px;
+}
+
+main .box12 {
+  border-top : 2px solid  #F1F1E6;
+  border-bottom : 2px solid  #F1F1E6;
+  font-family: 'insungitCutelivelyjisu';
+  color : #FFEDCB;
+  height: 300px;
+  margin-top: 100px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+}
+
+main .box12text{
+
+  height: 100px;
+  align-items: center;
+}
+
+main .box12text2{
+  border-bottom: 2px solid #F1F1E6;
+  height: 100px;
+  width: fit-content;
+  margin: auto;
+}
+
+main .sub1title {
+  display: flex;
+  color : #F1F1E6;
+  font-family: 'insungitCutelivelyjisu';
+  font-size: 30px;
+} 
+
+main .sub1title .sub1img {
+  width : 100px;
+  border-left : 2px #F1F1E6 solid;
+  padding-left: 20px;
+}
+
+main .sub1title .sub1text {
+  height: 100px;
+  line-height: 100px;
+  margin-left: 20px;
+}
+
+main .submain {
+  margin-top: 50px;
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 5rem;
+}
+
+main .submain .b1 {
+  width : 100%;
+  height : 100%;
+  border-radius: 20px;
+  background-color: #d9f3ffc2;
+  text-align: center;
+}
+
+main .submain .e1 {
+  width : 300px;
+  height : 200px;
+  margin-top: 30px;
+}
+
+footer #bottom {
+  margin-top: 50px;
+  display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+  align-items: cneter;
+  padding : 8px 12px;
+  border-top: 1px solid #F1F1E6;
+}
+
+footer #logoimg {
+width: 200px;
+margin-left: 100px;
+}
+
+footer #mob {
+margin-right: 100px;
+}
+
+footer #mob ul{
+display: flex;
+}
+
+
+footer #mob ul li{
+margin: 10px;
+}
+
+
+footer #custom {
+font-family: 'insungitCutelivelyjisu';
+color: #D9F3FF;
+}
+
+footer #custom ul li {
+margin-top: 10px;
+width : 250px;
+
+}
+
+footer #mob img {
+width: 50px;
 }
