@@ -89,6 +89,7 @@ header .rightmenu li:hover {
 
 main {
 margin: 0 auto;
+width: 1400px;
 }
 
 main .imgbox {
@@ -260,46 +261,34 @@ main .sub1title .sub1text {
 main .submain {
   margin-top: 50px;
   display : grid;
-  grid-template-columns: repeat(auto-fill , minmax(220px,1fr));
+  place-items: center;
+  grid-template-columns: repeat(auto-fill , minmax(220px,3fr));
   grid-auto-rows: 500px;
   grid-gap: 5rem;
 }
 
 
-main .submain {
-  margin-top: 50px;
-  display : grid;
-  grid-template-columns: repeat(auto-fill , minmax(220px,1fr));
-  grid-auto-rows: 500px;
-  grid-gap: 5rem;
-}
-
-
-/* main .submain .b1 {
+main .submain .b1 {
   width : 100%;
   height : 100%;
   border-radius: 20px;
   background-color: #d9f3ffc2;
   text-align: center;
-} */
+} 
 
 main .submain .e1 {
   width : 300px;
   height : 200px;
   margin-top: 30px;
-}
+} 
 
-/* @media screen and (max-width : 800px) {
-
-  main .submain {
+main .submain {
     margin-top: 50px;
     display : grid;
-    grid-template-columns: repeat( 1, 1fr);
+    grid-template-columns: repeat( 3, 1fr);
     grid-auto-rows: 500px;
     grid-gap: 5rem;
   } 
-
-}*/
 
 
 footer #bottom {
