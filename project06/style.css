@@ -5,6 +5,13 @@
 }
 
 @font-face {
+  font-family: 'NanumBarunpen';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'NanumBarunGothic';
   font-style: normal;
   font-weight: 400;
@@ -34,43 +41,550 @@
 
 * {
   padding : 0px;
+  margin: 0px;
 }
 
 ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #372C49;
+}
+
 body {
   font-family: 'NanumBarunGothic', sans-serif;
 }
 
+
+header .head {
+  display: flex;
+  justify-content: space-between;
+  border-bottom : 2px solid #453C58;
+  padding : 20px;
+}
+
 header .logo img{
-  width : 150px;
+  width : 200px;
   height: 100px;
+  padding-left: 50px;
 }
 
 header .topmenu {
+  display: flex;
+  justify-content: center;
   color : #372C49;
   font-size:  20px;
+  width : 700px;
+  height: 100px;
 }
 
 header .topmenu li {
-  display: inline-block;
-  margin-left : 10px;
-  margin-right : 10px;
+  margin-left : 20px;
+  margin-right : 20px;
+  margin-top: 50px;
+  padding : 10px;
+  width :100px;
+  height: fit-content;
+  text-align: center;
+
 }
 
+header .topmenu li:hover {
+  border-bottom : 3px solid #CE9EAD;
+}
+
+header .topmenu li a:hover{
+  color : #CE9EAD;
+}
+
+
 header .rightmenu {
+  display: flex;
   color : #372C49;
   font-size:  15px;
+  margin-right: 50px;
+  display: flex;
 }
 
 header .rightmenu li {
-  display: inline-block;
   margin-left : 10px;
   margin-right : 10px;
+  width:70px;
+  height:fit-content;
+  text-align: center;
 }
 
-header {
+header .rightmenu li a:hover {
+  color : #CE9EAD;
+  }
+
+
+main {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+main .mainsearch {
+  display:grid;
+  grid-template-columns: repeat(5 , 1fr );
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+main .box1 {
+  background-image: url("img/우주\ \(2\).jpg");
+  background-size: 100% 100%;
+}
+main .box2 {
+  background-image: url("img/책더미.jpg");
+  background-size: 100% 100%;
+}
+
+main .box3 {
+  background-image: url("img/책진열.jpg");
+  background-size: 100% 100%;
+}
+
+main .box4 {
+  background-image: url("img/음식.jpg");
+  background-size: 100% 100%;
+}
+
+main .box5 {
+  background-image: url("img/가을책.jpg");
+  background-size: 100% 100%;
+}
+
+main .box6 {
+  background-image: url("img/고양이.jpg");
+  background-size: 100% 100%;
+}
+
+main .box7 {
+  grid-column: 2/5;
+}
+
+main .box8 {
+  background-image: url("img/책커피.jpg");
+  background-size: 100% 100%;
+}
+
+main .box9 {
+  background-image: url("img/스터디.jpg");
+  background-size: 100% 100%;
+}
+
+main .box10 {
+  background-image: url("img/소풍.jpg");
+  background-size: 100% 100%;
+}
+
+main .box11 {
+  background-image: url("img/달.jpg");
+  background-size: 100% 100%;
+}
+
+main .box12 {
+  background-image: url("img/강아지.jpg");
+  background-size: 100% 100%;
+}
+
+main .box13 {
+  background-image: url("img/바다사진.jpg");
+  background-size: 100% 100%;
+}
+
+main .mainsearch .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+main .mainsearch .text {
+  font-size: 25px;
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 200px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .mainsearch .text:hover{
+  opacity: 1;
+}
+
+main .mainsearch {
+  text-align: center;
+}
+
+main .box7 {
+  padding-top: 50px;
+}
+
+main .box7 span {
+  color : #CE9EAD;
+  font-size: 35px;
+}
+
+main .box7 input{
+  margin-top: 20px;
+  width : 350px;
+  height: 50px;
+  border-style: none;
+  border-bottom: 2px solid #453C58;
+  text-align: center;
+}
+
+main .box7 button{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #CE9EAD;
+}
+
+main .mtext {
+  font-size: 25px;
+  color : #372C49;
+  border-left : 2px  #372C49 solid;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+main .mimg {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  grid-gap: 5rem;
+
+}
+
+
+main .mimg .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main .searchtitle {
+  color : #372C49;
+  font-size: 25px;
+}
+
+main .maincontent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 500px;
+  gap : 3rem;
+}
+
+main .maincontent .box {
+  background-image: url("https://image.aladin.co.kr/product/28465/73/cover500/k092835920_2.jpg");
+  background-size: 100% 100%;
+}
+
+main .maincontent .img {
+  border-radius: 10px;
+}
+
+main .maincontent .line{
+  border : 1px solid red;
+}
+
+main .maincontent .img .text {
+  font-size: 25px;
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 400px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .maincontent .img .text:hover{
+  opacity: 1;
+}
+
+main .maintext1 {
+  font-size: 40px;
+  font-family: 'NanumBarunpen';
+  color : #372C49;
+  height: 150px;
+  line-height: 70px;
+  margin-top: 180px;
+  text-align: center;
+}
+
+main .maintext1 span {
+  color: #df809e;
+}
+
+main .maintext2 {
+  display: grid;
+  grid-template-rows: repeat(4 , 70px);
+  gap: 60px;
+}
+
+main .maintext2 span {
+  color: #b95071;
+}
+
+main .maintext2 .text1{
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+  font-family: 'NanumBarunpen';
+  border-bottom : 2px solid #453C58;
+}
+
+main .maintext2 .text {
+  font-family: 'NanumBarunpen';
+  font-size: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #df809e;
+}
+
+
+main .mainpage1{
+  margin-top: 50px;
+  color : #372C49;
+}
+
+main .mimg .box1 {
+  background-image: url("https://image.aladin.co.kr/product/52/40/cover500/8937461099_3.jpg");
+  background-size: 100% 100%;
+}
+
+main .mimg .box2 {
+  background-image: url("https://image.aladin.co.kr/product/26429/15/cover500/8954677258_2.jpg");
+  background-size: 100% 100%;
+}
+
+main .mimg .box3 {
+  background-image: url("https://image.aladin.co.kr/product/9871/8/cover500/k042535550_1.jpg");
+  background-size: 100% 100%;
+}
+
+main .mainpage1 .text {
+  font-size: 25px;
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 400px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .mainpage1 .text:hover{
+  opacity: 1;
+}
+
+
+
+main .sub2main .con1 {
+  padding-top: 50px;
+}
+
+main .sub2main .con1 span {
+  color : #CE9EAD;
+  font-size: 35px;
+}
+
+main .sub2main .con1 input {
+  margin-top: 20px;
+  width : 350px;
+  height: 50px;
+  border-style: none;
+  border-bottom: 2px solid #453C58;
+  text-align: center;
+}
+
+main .sub2main .con1 button{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #CE9EAD;
+}
+
+main .sub2main {
+  display: grid;
+  grid-template-columns: repeat( 4, 1fr);
+  grid-auto-rows: 300px;
+  gap : 1rem;
+}
+
+main .sub2main .con1 {
+ grid-column : 1/5;
+ text-align: center;
+ margin-top: 50px;
+}
+
+main .con2 {
+  background-image: url("img/우주\ \(2\).jpg");
+  background-size: 100% 100%;
+}
+main .con3 {
+  background-image: url("img/책더미.jpg");
+  background-size: 100% 100%;
+}
+
+main .con4 {
+  background-image: url("img/책진열.jpg");
+  background-size: 100% 100%;
+}
+
+main .con5 {
+  background-image: url("img/음식.jpg");
+  background-size: 100% 100%;
+}
+
+main .con6 {
+  background-image: url("img/가을책.jpg");
+  background-size: 100% 100%;
+}
+
+main .con7 {
+  background-image: url("img/고양이.jpg");
+  background-size: 100% 100%;
+}
+
+main .con8 {
+  background-image: url("img/책커피.jpg");
+  background-size: 100% 100%;
+}
+
+main .con9 {
+  background-image: url("img/스터디.jpg");
+  background-size: 100% 100%;
+}
+
+main .con10 {
+  background-image: url("img/소풍.jpg");
+  background-size: 100% 100%;
+}
+
+main .con11 {
+  background-image: url("img/달.jpg");
+  background-size: 100% 100%;
+}
+
+main .con12 {
+  background-image: url("img/강아지.jpg");
+  background-size: 100% 100%;
+}
+
+main .con13 {
+  background-image: url("https://image.aladin.co.kr/img/events/book/2022/04/221214_december_img9.jpg");
+  background-size: 100% 100%;
+}
+
+main .con14 {
+  background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/230119_essay_img6.jpg");
+  background-size: 100% 100%;
+}
+
+main .con15 {
+  background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/230113_january_img2.jpg");
+  background-size: 100% 100%;
+}
+
+main .con16 {
+  background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/221226_know_img4.jpg");
+  background-size: 100% 100%;
+}
+
+main .con17 {
+  background-image: url("img/바다사진.jpg");
+  background-size: 100% 100%;
+}
+
+main .sub2main .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+main .sub2main .text {
+  font-size: 25px;
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 300px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .sub2main .text:hover{
+  opacity: 1;
+}
+
+main .mainsearch {
+  text-align: center;
+}
+
+
+footer .foot {
+  margin-top: 50px;
   display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+  align-items: cneter;
+  padding : 8px 12px;
+  border-top : 2px solid #453C58;
+}
+
+footer .logoimg img {
+  width : 200px;
+  height: 100px;
+  padding-left: 50px;
+}
+
+footer .mob {
+margin-right: 100px;
+display: flex;
+margin-top: 30px;
+}
+
+
+footer .custom {
+color: #453C58;
+font-size: 15px;
+}
+
+footer .custom ul li {
+margin-top: 10px;
+width : 250px;
+
+}
+
+footer .mob li {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+footer .mob img {
+width: 50px;
 }
