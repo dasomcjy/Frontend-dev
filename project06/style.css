@@ -134,65 +134,65 @@ main .mainsearch {
   margin-top: 30px;
 }
 
-main .box1 {
+main .mainsearch .box1 {
   background-image: url("img/우주\ \(2\).jpg");
   background-size: 100% 100%;
 }
-main .box2 {
+main .mainsearch .box2 {
   background-image: url("img/책더미.jpg");
   background-size: 100% 100%;
 }
 
-main .box3 {
+main .mainsearch .box3 {
   background-image: url("img/책진열.jpg");
   background-size: 100% 100%;
 }
 
-main .box4 {
+main .mainsearch .box4 {
   background-image: url("img/음식.jpg");
   background-size: 100% 100%;
 }
 
-main .box5 {
+main .mainsearch .box5 {
   background-image: url("img/가을책.jpg");
   background-size: 100% 100%;
 }
 
-main .box6 {
+main .mainsearch .box6 {
   background-image: url("img/고양이.jpg");
   background-size: 100% 100%;
 }
 
-main .box7 {
+main .mainsearch .box7 {
   grid-column: 2/5;
 }
 
-main .box8 {
+main .mainsearch .box8 {
   background-image: url("img/책커피.jpg");
   background-size: 100% 100%;
 }
 
-main .box9 {
+main .mainsearch .box9 {
   background-image: url("img/스터디.jpg");
   background-size: 100% 100%;
 }
 
-main .box10 {
+main .mainsearch .box10 {
   background-image: url("img/소풍.jpg");
   background-size: 100% 100%;
 }
 
-main .box11 {
+main .mainsearch .box11 {
   background-image: url("img/달.jpg");
   background-size: 100% 100%;
 }
 
-main .box12 {
+main .mainsearch .box12 {
   background-image: url("img/강아지.jpg");
   background-size: 100% 100%;
 }
 
-main .box13 {
+main .mainsearch .box13 {
   background-image: url("img/바다사진.jpg");
   background-size: 100% 100%;
 }
@@ -226,16 +226,16 @@ main .mainsearch {
   text-align: center;
 }
 
-main .box7 {
+main .mainsearch .box7 {
   padding-top: 50px;
 }
 
-main .box7 span {
+main .mainsearch .box7 span {
   color : #CE9EAD;
   font-size: 35px;
 }
 
-main .box7 input{
+main .mainsearch .box7 input{
   margin-top: 20px;
   width : 350px;
   height: 50px;
@@ -244,7 +244,7 @@ main .box7 input{
   text-align: center;
 }
 
-main .box7 button{
+main .mainsearch .box7 button{
   width: 50px;
   height: 50px;
   border-radius: 25px;
@@ -253,10 +253,10 @@ main .box7 button{
 }
 
 main .mtext {
-  font-size: 25px;
+  font-size: 30px;
   color : #372C49;
-  border-left : 2px  #372C49 solid;
-  margin-top: 50px;
+  border-left : 2px  #b95071 solid;
+  margin-top: 150px;
   margin-bottom: 30px;
   padding-left: 30px;
 }
@@ -397,6 +397,31 @@ main .mainpage1 .text:hover{
 }
 
 
+main .submaintitle {
+  font-size: 30px;
+  border-left: 2px solid #df809e;
+  width : 300px;
+  padding-left: 30px;
+  margin-top: 50px;
+  
+}
+
+
+main .sub2main .con0 {
+  text-align: right;
+}
+
+main .sub2main .con0 a{
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px solid #372C49;
+  border-bottom: 2px solid #372C49;
+}
+
+main .sub2main .con0 a:hover{
+  color:#b95071;
+}
 
 main .sub2main .con1 {
   padding-top: 50px;
@@ -432,86 +457,86 @@ main .sub2main {
 }
 
 main .sub2main .con1 {
- grid-column : 1/5;
+ grid-column : 2/4;
  text-align: center;
  margin-top: 50px;
 }
 
-main .con2 {
+main .sub2main .con2 {
   background-image: url("img/우주\ \(2\).jpg");
   background-size: 100% 100%;
 }
-main .con3 {
+main .sub2main .con3 {
   background-image: url("img/책더미.jpg");
   background-size: 100% 100%;
 }
 
-main .con4 {
+main .sub2main .con4 {
   background-image: url("img/책진열.jpg");
   background-size: 100% 100%;
 }
 
-main .con5 {
+main .sub2main .con5 {
   background-image: url("img/음식.jpg");
   background-size: 100% 100%;
 }
 
-main .con6 {
+main .sub2main .con6 {
   background-image: url("img/가을책.jpg");
   background-size: 100% 100%;
 }
 
-main .con7 {
+main .sub2main .con7 {
   background-image: url("img/고양이.jpg");
   background-size: 100% 100%;
 }
 
-main .con8 {
+main .sub2main .con8 {
   background-image: url("img/책커피.jpg");
   background-size: 100% 100%;
 }
 
-main .con9 {
+main .sub2main .con9 {
   background-image: url("img/스터디.jpg");
   background-size: 100% 100%;
 }
 
-main .con10 {
+main .sub2main .con10 {
   background-image: url("img/소풍.jpg");
   background-size: 100% 100%;
 }
 
-main .con11 {
+main .sub2main .con11 {
   background-image: url("img/달.jpg");
   background-size: 100% 100%;
 }
 
-main .con12 {
+main .sub2main .con12 {
   background-image: url("img/강아지.jpg");
   background-size: 100% 100%;
 }
 
-main .con13 {
+main .sub2main .con13 {
   background-image: url("https://image.aladin.co.kr/img/events/book/2022/04/221214_december_img9.jpg");
   background-size: 100% 100%;
 }
 
-main .con14 {
+main .sub2main .con14 {
   background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/230119_essay_img6.jpg");
   background-size: 100% 100%;
 }
 
-main .con15 {
+main .sub2main .con15 {
   background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/230113_january_img2.jpg");
   background-size: 100% 100%;
 }
 
-main .con16 {
+main .sub2main .con16 {
   background-image: url("https://image.aladin.co.kr/img/events/book/2023/01/221226_know_img4.jpg");
   background-size: 100% 100%;
 }
 
-main .con17 {
+main .sub2main .con17 {
   background-image: url("img/바다사진.jpg");
   background-size: 100% 100%;
 }
@@ -543,6 +568,165 @@ main .sub2main .text:hover{
 
 main .mainsearch {
   text-align: center;
+}
+
+main .sub3img {
+  display : grid;
+  grid-template-columns: repeat( 5, 1fr);
+  grid-auto-rows: 300px;
+  gap : 1rem;
+}
+
+main .sub3img .box1 {
+  background-image: url("https://image.aladin.co.kr/product/9871/8/cover500/k042535550_1.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box2 {
+  background-image: url("https://image.aladin.co.kr/product/26429/15/cover500/8954677258_2.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box3 {
+  background-image: url("https://image.aladin.co.kr/product/52/40/cover500/8937461099_3.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box4 {
+  background-image: url("https://image.aladin.co.kr/product/28542/92/cover500/k152835237_1.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box5 {
+  background-image: url("https://image.aladin.co.kr/product/18154/59/cover500/k102534140_1.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box6 {
+  background-image: url("https://image.aladin.co.kr/product/17048/25/cover500/8932473900_1.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box7 {
+  background-image: url("https://image.aladin.co.kr/product/19359/16/cover500/s152835852_1.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box8 {
+  background-image: url("https://image.aladin.co.kr/product/19804/82/cover500/k072635131_2.jpg");
+  background-size: 100% 100%;
+}
+
+main .sub3img .box9 {
+  background-image: url("https://image.aladin.co.kr/product/4086/97/cover500/8936434128_2.jpg");
+  background-size: 100% 100%;
+}
+main .sub3img .box10 {
+  background-image: url("https://image.aladin.co.kr/product/22246/11/cover500/k842636722_1.jpg");
+  background-size: 100% 100%;
+}
+
+
+main .sub3img .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main .sub3img .text {
+  font-size: 25px;
+  color :  #F1F1E6;
+  text-align: center;
+  line-height: 300px;
+  opacity: 0;
+  background-color: #26334398;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+main .sub3img .text:hover{
+  opacity: 1;
+}
+
+main .sub3img {
+  text-align: center;
+}
+
+main .sublogin{
+  display : flex;
+  justify-content: center;
+}
+
+
+
+main .subjoin {
+  width : 500px;
+  margin : 0 auto;
+}
+
+main .subjoin div{
+  text-align: center;
+}
+
+main .subjoin .jointitle{
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+main .subjoin table {
+  width : 700px;
+  border-spacing: 0 40px;
+}
+
+main .subjoin table input {
+  width: 280px;
+  height: 30px;
+  border-style: none;
+  border-bottom: 2px solid #453C58;
+}
+
+main .subjoin table .title {
+  font-size: 20px;
+  border-left:2px solid #df809e;
+  padding-left: 10px;
+}
+
+main .subjoin table span {
+  margin-left: 10px;
+}
+
+main .subjoin table a:hover {
+  color:#CE9EAD;
+}
+
+main .subjoin .joinbtn {
+  font-size: 20px;
+}
+
+main .subjoin .joinbtn a:hover{
+  color :#df809e;
+}
+
+main .freewrite {
+  display: flex;
+  justify-content: center;
+}
+
+main .freewrite table{
+  margin-top: 50px;
+  width : 800px;
+  text-align: center;
+  border-spacing: 0 40px;
+  border-top : 1px solid #372C49;
+  border-bottom: 1px solid #372C49;
+  
+}
+
+main .freewrite table th {
+  font-size: 20px;
+  padding : 10px;
+  background-color: #CE9EAD;
+}
+
+main .freewrite table .title {
+text-align: left;
+padding-left: 50px;
 }
 
 
