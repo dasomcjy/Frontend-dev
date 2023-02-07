@@ -1,0 +1,18 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  background: url("https://images.unsplash.com/photo-1675432979329-e8f2ac1cd914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60") no-repeat right bottom fixed;
+  background-size: cover;
+}
+
+a:link, a:hover, a:visited {
+  color:#fff;
+  text-decoration:none;
+  text-shadow: 1px 1px 0 #283744;
+}
+
